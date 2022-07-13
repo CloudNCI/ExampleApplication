@@ -50,7 +50,7 @@ jobs:
           name: Publish Docker Image
           command: docker push $IMAGE_NAME
   deploy:
-    docker
+    docker:
       - image: circleci/node:10.16.3
     steps:
       - run:
